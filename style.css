@@ -1,0 +1,19 @@
+<style>
+     .kolom{
+      display: table;
+      
+    }
+    .kolom1{
+      width: 200px;
+      height: auto;
+      display: table-cell;
+      border: 1px solid #000000;
+    
+    }
+    .kolom2{
+      width: 584px;
+      height: auto;
+      display: table-cell;
+      border: 1px solid #000000;
+    }
+</style>
