@@ -19,7 +19,7 @@
 			$jumlah=0;
 		}
 		
-		echo "jumlah bilangan prima antara sati dan 50 adalah ".$bilprim;
+		echo "jumlah bilangan prima antara satu dan 50 adalah ".$bilprim." angka";
 	?>
 </body>
 </html>
