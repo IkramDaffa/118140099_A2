@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
 	$kata = array("lanirne","aduh","qifuat","toda","anevi","samid","kifuat");
+	$kata2 = array("lanirne","aduh","qifuat","toda","anevi","samid","kifuat");
 	$temp=0;
 	$n=count($kata);
 
@@ -27,7 +28,7 @@
 		}
 	}
 
-	echo "<br>"."kata yang telah terurut : ";
+	echo "<br>"."kata yang telah terurut menggunakan bubble sort: ";
 	for($x=0;$x<$n;$x++){  
         echo $kata[$x];  
         if($x!=$n-1){
@@ -36,6 +37,17 @@
         else{
         	echo ".";
         }  
-    }  	
+    }
+    echo "<br>"."kata yang telah terurut menggunakan fungsi bawaan: ";
+    sort($kata2);
+    for($x=0;$x<$n;$x++){  
+        echo $kata2[$x];  
+        if($x!=$n-1){
+        	echo ", ";
+        }
+        else{
+        	echo ".";
+        }  
+    }
 ?>
 </html>
