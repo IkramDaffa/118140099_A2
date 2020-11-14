@@ -1,0 +1,106 @@
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar li {
+  float: right;
+  margin-right: 20px;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #5fe9ff;
+}
+
+.about {
+  background-color: #2d3e50;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.about h1 {
+  text-align: center;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.about p {
+  text-align: center;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.galery {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #deece6;
+}
+.galery h1 {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.galery img {
+  margin: 20px;
+  border: 4px solid black;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.home p {
+  color: white;
+  margin: 0px;
+  padding: 80px;
+  font-size: 60pt;
+  text-align: center;
+  background-color: #e0e0e0;
+  background-image: url(https://wallpapercave.com/wp/wp37411.jpg);
+  text-shadow: 2px 2px black;
+}
+
+.contact {
+  background-color: lightgray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.contact * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+input[type=text] {
+  width: 50%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.footer {
+  background-color: #2d3e50;
+  padding: 5px;
+}
+.footer p {
+  text-align: center;
+  color: white;
+}
+
+/*# sourceMappingURL=CSS.css.map */
