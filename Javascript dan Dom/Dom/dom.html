@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       body{
+        margin-top:100pt;
+        margin-left:50pt;
+       }
+    </style>
+    <title>Muhammad Ikram Daffa Ramdhani</title>
+</head>
+<body>
+     <script>
+        function ubah(a, b) {
+            long = a.length;
+            if (long) {
+                for (let i=0; i<long; i++) {
+                    a[i].style.backgroundColor=b;
+                }
+                return;
+            }
+            a.style.backgroundColor = b;
+        }
+    </script>
+    <main>
+        <div class="test">Div class test</div>
+        <div id="test">div ID test</div> 
+        <section class="test">section class test</section>
+        <br>
+        <button onclick="return ubah(document.getElementById('test'), 'blue')">getElementById</button><br>
+        <button onclick="return ubah(document.getElementsByClassName('test'), 'green')">getElementsByClassName</button><br>
+        <button onclick="return ubah(document.getElementsByTagName('section'), 'red')">getElementsByTagName</button><br>
+        <button onclick="return ubah(document.querySelector('div'), 'brown')">querySelector</button><br> 
+        <button onclick="return ubah(document.querySelectorAll('div'), 'yellow')">querySelectorAll</button><br>
+    </main>
+</body>
+</html>

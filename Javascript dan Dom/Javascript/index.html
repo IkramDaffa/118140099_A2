@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        body{
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+    </style>
+    <title>Muhammad Ikram Daffa Ramdhani</title>
+</head>
+<body> 
+        <form >
+                <input type="text" id="barang" placeholder="Inputkan nama barang">
+                <input type="button" value="Tambah" onclick="return tambah()">
+        </form>  
+        <ul><div id="style"></div></ul>
+    <script>
+        const barang = document.getElementById('barang');
+        const style= document.getElementById('style');
+        let array = [];
+        function tambah() {
+            if (barang.value.length>0) {
+                array.push(barang.value);
+                tampil();
+            } else {
+                console.log("Tidak ada data");
+                alert('Tidak ada data yang dimasukkan');
+            }
+            barang.value = '';
+        }
+        function edit(a) {
+            const indeks = array.indexOf(a);
+            const temp = prompt('Nama Barang');
+            if(temp.length>0) {
+                array[indeks] = temp;
+            } else {
+                alert('Tidak ada data yang di edit');
+            }
+            tampil();
+        }
+        function hapus(a) {
+            const indeks = array.indexOf(a);
+            array.splice(indeks, 1);
+            tampil();
+        }
+        function tampil() {
+            let data = '';
+            array.forEach(datum => {
+                data = data +  `<div class='data_barang'>
+                                <span>${datum}</span> [
+                                <a href="#" onclick="return edit('${datum}')">Edit</a>
+                               |
+                                <a href="#" onclick="return hapus('${datum}')">Hapus</a>
+                                ]
+                            </div>`;
+            });
+            style.innerHTML = data;
+        }
+    </script>
+</body>
+</html>

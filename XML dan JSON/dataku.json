@@ -1,0 +1,27 @@
+﻿{
+	"root": {
+		"name": {
+			"first": "Muhammad Ikram",
+			"last": "Daffa Ramdhani"
+		},
+		"gender": "Laki-laki",
+		"saudara": {
+			"first": "Reffa",
+			"last": "Jasmine"
+		},
+		"orangtua": {
+			"ayah": "SM. Irsan Saliwan",
+			"ibu": "Neni Rumaeni"
+		},
+		"hobby": {
+			"first": "Nonton Anime",
+			"second": "Makan",
+			"third": "Main Genshin Impact"
+		},
+		"alamat": "Indonesia, Bekasi",
+		"social_media": {
+			"ig": "Ikram_daffa",
+			"fb": "Ikram Daffa"
+		}
+	}
+}

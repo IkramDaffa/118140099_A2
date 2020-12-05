@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <name>
+    <first>Muhammad Ikram</first>
+    <last>Daffa Ramdhani</last>
+  </name>
+
+  <gender>Laki-laki</gender>
+
+  <saudara>
+    <first>Reffa</first>
+    <last>Jasmine</last>
+  </saudara>
+
+  <orangtua>
+    <ayah>M.Irsan Saliwan</ayah>
+    <ibu>Neni Rumaeni</ibu>
+  </orangtua>
+
+  <hobby>
+    <first>Nonton Anime</first>
+    <second>Makan</second>
+    <third>Main Genshin Impact</third>
+  </hobby>
+
+  <alamat>Indonesia, Bekasi</alamat>
+  <social_media>
+    <ig>ikram_daffa</ig>
+    <fb>Ikram Daffa</fb>
+  </social_media>
+</root>
