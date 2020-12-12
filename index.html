@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>data mahasiswa</title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <h1>Masukkan data</h1>
+    <form method="post" id="datamhs">
+            <label>NIM :</label><br>
+            <input type="number" name="nim" id= "editnim" placeholder="max (9 angka)"><br>
+        
+            <label>Nama :</label><br>
+            <input type="text" name="nama" id="editnama"><br>
+        
+            <label>Prodi :</label><br>
+            <select name="prodi" required="" id="editprodi">
+                <option value="" hidden="">Pilih Prodi</option>
+                <option value="IF">Teknik Informatika</option>
+                <option value="EL">Teknik Elektro</option>
+                <option value="TI">Teknik Industri</option>
+                <option value="FA">Farmasi</option>
+            </select><br>
+        
+            <label>Angkatan</label><br>
+            <select name="angkatan" id="editangkatan">
+                <option value="" hidden="">Pilih</option>
+                <option value="20">2020</option>
+                <option value="19">2019</option>
+                <option value="18">2018</option>
+                <option value="17">2017</option>
+            </select><br>
+    
+    </form>
+    <button id="tambahdata">Tambah data</button>
+    <br><br>
+    <div id="show"></div>
+    <script>
+        $(document).ready(function(){
+            $('#show').load("tampil.php");
+            $('#tambahdata').click(function(){
+                var data = $('#datamhs').serialize();
+                $.ajax({
+                    type : 'POST',
+                    url :"tambah.php",
+                    data: data,
+                    cache   : false,
+                    success : function(data){
+                        $('#show').load("tampil.php");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
